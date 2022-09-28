@@ -1,0 +1,83 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+/* #heading {
+    border: 2px solid red;
+} */
+#heading > h1 {
+    margin: 0px auto;
+    text-align: center;
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: bolder;
+}
+#heading > p {
+    width: 40%;
+    margin: 20px auto;
+    text-align: center;
+    color: gray;
+    line-height: 30px;
+}
+#mail {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    height: 60px;
+    margin: auto;
+    border: 8px solid RGB(228, 243, 255);
+    border-radius: 10px;
+}
+#mail > input {
+    width: 60%;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+#mail > input::placeholder {
+    font-size: 20px;
+}
+#mail > button {
+    width: 30%;
+    background-color: RGB(0, 185, 253);
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 10px;
+    border: none;
+}
+#top-image> a {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#top-image > a > img {
+    width: 80%
+}
+#media {
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-content: space-around;
+    align-items: center;
+}
+#media > div {
+    display: flex;
+    flex-direction: column;
+
+}
+#media > div > img {
+    width: 100%;
+}
+#media > div > p {
+    text-align: center;
+    line-height: 30px;
+    font-weight: 300;
+}
