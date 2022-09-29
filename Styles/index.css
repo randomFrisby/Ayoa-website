@@ -1,9 +1,10 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
-/* #heading {
-    border: 2px solid red;
-} */
+button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
 #heading > h1 {
     margin: 0px auto;
     text-align: center;
@@ -12,22 +13,25 @@ body {
     font-weight: bolder;
 }
 #heading > p {
-    width: 40%;
+    width: 50%;
     margin: 20px auto;
+    font-size: 19px;
     text-align: center;
-    color: gray;
+    font-weight: 300;
     line-height: 30px;
 }
-#mail {
+.mail {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 40%;
     height: 60px;
     margin: auto;
     border: 8px solid RGB(228, 243, 255);
     border-radius: 10px;
+    background-color: white;
 }
-#mail > input {
+.mail > input {
     width: 60%;
     font-size: 20px;
     margin-left: 10px;
@@ -36,19 +40,21 @@ body {
     border: none;
     outline: none;
 }
-#mail > input::placeholder {
+.mail > input::placeholder {
     font-size: 20px;
 }
-#mail > button {
+.mail > button {
     width: 30%;
     background-color: RGB(0, 185, 253);
     color: white;
     padding: 10px 20px;
     margin: 5px;
-    font-family: 'Open Sans', sans-serif;
+    font: inherit;
     border-radius: 10px;
     border: none;
 }
+
+
 #top-image> a {
     width: 100%;
     margin-top: 40px;
@@ -61,7 +67,7 @@ body {
 }
 #media {
     width: 70%;
-    margin: auto;
+    margin: 50px auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
@@ -71,13 +77,351 @@ body {
 #media > div {
     display: flex;
     flex-direction: column;
-
+    align-items: center;
+    min-height: 135px;
 }
 #media > div > img {
-    width: 100%;
+    width: 50%;
 }
 #media > div > p {
     text-align: center;
     line-height: 30px;
     font-weight: 300;
+}
+
+#demo {
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    row-gap: 30px;
+}
+#demo > div:nth-child(1) {
+    width: 60%;
+    padding: 10px;
+    border-radius: 20px;
+    z-index: -1;
+}
+#demo-heading {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+
+}
+#demo-heading > h1 {
+    font-size: 40px;
+    font-weight: 800;
+}
+#demo-heading > h1 > span {
+    position: relative;
+    color: white !important;
+}
+#demo-heading > h1 > span:before {
+    transform: rotate(-1.5deg);
+    content: "";
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    left: -0.2em;
+    padding: 0 0.2em;
+    height: 1.2em;
+    top: 8px;
+    background-color: #1893fb !important;
+}
+
+
+#tick-points {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#tick-points > div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#tick-points > div::before {
+    content: '';
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background: url(https:ayoa.com/wp-content/uploads/2021/10/tick.svg) no-repeat;
+    position: relative;
+    top: 5px;
+    margin-right: 8px;
+}
+#tick-points + div {
+    width: 80%;
+    margin: 10px auto;
+}
+#content-1 > button {
+    margin-top: 20px;
+    background-color: #1893fb;
+    border: none;
+    border-radius: 20px;
+    font: inherit;
+    color: white;
+    margin-left: 50px;
+    padding: 0px 25px;
+}
+#content-2 > video {
+    max-width: 600px;
+    height: auto;
+    width: 50vw;
+    background-color: #fff;
+    border-radius: 40px;
+    box-shadow: 0 20px 50px rgb(0 0 0 / 32%);
+    margin: 0 auto;
+}
+
+#plan {
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-around;
+}
+#plan > div {
+    padding: 30px;
+    width: 25%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+}
+#plan > div > h1 {
+    margin-top: 0px;
+    font-size: 35px;
+    line-height: 42px;
+    font-weight: 700;
+}
+#plan > div:nth-child(1) > h1{
+    color: #6A2FCC;
+}
+#plan > div:nth-child(2) > h1 {
+    color: #73C43B;
+}
+#plan > div > p {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 31px;
+}
+#plan > div >img {
+    width: 100%;
+    margin-top: 20px;
+    opacity: .5;
+}
+#ticks {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 300;
+    color: #383838;
+}
+#plan > div:last-child > div:first-child {
+    background-color: #00283F;
+    color: white;
+}
+
+#feature {
+    margin-top: 80px;
+}
+#feature-heading {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+#feature-heading > h1 {
+    font-size: 40px;
+    font-weight: 800;
+}
+#feature-heading > h1 > span {
+    position: relative;
+    color: white !important;
+}
+#feature-heading > h1 > span:before {
+    transform: rotate(-1.5deg);
+    content: "";
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    left: -0.2em;
+    padding: 0 0.2em;
+    height: 1.2em;
+    top: 8px;
+    background-color: #E9056C!important;
+}
+#feature-heading > p {
+    font-weight: 300;
+    line-height: 26px;
+    font-size: 19px;
+}
+#feature-heading > p > strong{
+    font-weight: 700;
+}
+
+#tabs {
+    width: 70%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#tabs > div {
+    min-width: 12%;
+    text-align: center;
+}
+
+#tabs > div > img {
+    display: block;
+    margin: auto;
+    height: 50px;
+    width: 30px;
+}
+
+
+
+#discover {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+#discover > div {
+    width: 49%;
+}
+#discover > div:first-child > img {
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+#discover > div > div > h1 {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 800;
+}
+#discover > div > div > p {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #5c5c5c;
+}
+#discover > div:last-child > div:last-child {
+    display: flex;
+    column-gap: 20px;
+}
+#discover > div:last-child > div:last-child > img {
+    height: 3.5rem;
+}
+
+#try-box {
+    background-color: #048FE6;
+    height: auto;
+    padding: 30px;
+}
+#try-box > h1 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+#try-box > h1 > img{
+    position: relative;
+    top: 15px;
+}
+#try-box > h2 {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+}
+#company {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+#try-box > img {
+    display: block;
+    margin: 20px auto;
+}
+#try-box > img + div {
+    width: 40%;
+    margin: auto;
+    font-size: 22px;
+    line-height: 31px;
+    color: #ffffff;
+    font-weight: 300;
+    text-align: center;
+}
+#try-box > img + div > strong:first-child {
+    font-weight: 800;
+    color: #ffca00;
+}
+
+
+@media (max-width: 900px)  {
+    #heading > h1 {
+        text-align: center;
+        font-size: 40px;
+    }
+    #demo {
+        flex-direction: column;
+        align-items: center;
+    }
+    #feature-heading > h1 > span {
+        display: block;
+        max-width: 80%;
+        margin: 0 auto;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    #media {
+        grid-template-columns: 50%;
+    }
+    #plan {
+        width: 50%;
+        flex-direction: column;
+    }
+    #plan > div {
+        margin: 20px auto;
+        width: 90%;
+    }
+    #tabs > div > span{
+        display: none;
+    }
+    #discover {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+    #discover > div {
+        width: 100%;
+    }
+    #discover > div > div > h1 {
+        text-align: center;
+    }
+    #discover > div > div > p {
+        text-align: center;
+    }
+    #discover > div:last-child > div:last-child {
+        justify-content: center;
+    }
+    #discover > div:last-child > div:last-child > img {
+        height: 3rem;
+    }
+}
+
+
+@media (max-width: 1160px) {
+    .mail > button {
+        width: 100%;
+    }
+    #heading > p {
+        width: 80%;
+    }
+}
+@media (max-width: 599px) {
+    #company {
+        flex-direction: column;
+        align-items: center;
+    }
 }
