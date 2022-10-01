@@ -1,4 +1,8 @@
 #navbar{
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+    background-color: #FFFFFF;
    display: flex;
    justify-content: space-between;
    align-items: center;
