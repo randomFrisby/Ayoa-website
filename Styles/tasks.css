@@ -9,6 +9,7 @@ button:hover {
 }
 #top {
     background-image: linear-gradient(#FFFFFF, #E9F6FF, #ACDEFF, #5DBFFE);
+    margin-top: 30px;
 }
 .task-tag {
     width: 200px;
